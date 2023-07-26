@@ -1,0 +1,69 @@
+# Do not track any private files.
+private/*
+!private/.gitkeep
+
+# Do not track any public files.
+web/sites/default/files/*
+!web/sites/default/files/.gitkeep
+
+# Do not track any vendor packages.
+vendor
+web/core
+web/modules/contrib
+web/profiles
+web/themes/contrib
+web/libraries
+
+# Do not track any scaffold files.
+.editorconfig
+.gitattributes
+.DS_Store
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.ht.router.php
+web/.htaccess
+web/autoload.php
+web/example.gitignore
+web/index.php
+web/INSTALL.txt
+web/README.txt
+web/robots.txt
+web/update.php
+web/web.config
+web/sites/README.txt
+web/sites/example.settings.local.php
+web/sites/example.sites.php
+web/sites/default/default.services.yml
+web/sites/default/default.settings.php
+web/modules/README.txt
+web/profiles/README.txt
+web/themes/README.txt
+
+# Do not track local settings
+web/sites/default/services.local.yml
+
+# Do not track editor files
+.idea
+
+# Ignore SimpleTest folders
+web/sites/simpletest
+
+# Do not track theme and module dist/ folders
+web/modules/custom/**/assets/dist
+web/modules/custom/oddsshark_data_react_blocks/App/dist
+web/themes/custom/os/dist
+
+#Webpack and build process
+node_modules/
+*.map
+
+# Do not ignore theme vendor folder
+!web/themes/custom/os/src/scss/**/vendor
+
+# Do not track local hatchery file.
+.hatchery.local.yml
+
+#Ignore test coverage folder
+coverage.data
+coverage/
