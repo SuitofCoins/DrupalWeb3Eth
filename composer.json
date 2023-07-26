@@ -22,7 +22,8 @@
         "drupal/core-recommended": "^9.3",
         "drupal/devel": "^5.1",
         "drupal/js_component": "^2.0@alpha",
-        "drupal/pathauto": "^1.11"
+        "drupal/pathauto": "^1.11",
+        "drush/drush": "^11.6"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -30,7 +31,12 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
