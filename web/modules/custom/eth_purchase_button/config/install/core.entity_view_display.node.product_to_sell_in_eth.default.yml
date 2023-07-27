@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product_to_sell_in_eth.body
+    - field.field.node.product_to_sell_in_eth.field_price
+    - node.type.product_to_sell_in_eth
+  module:
+    - eth_purchase_button
+    - text
+    - user
+id: node.product_to_sell_in_eth.default
+targetEntityType: node
+bundle: product_to_sell_in_eth
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {}
+    third_party_settings: {}
+    weight: 101
+    region: content
+  field_price:
+    type: eth_purchase_button_formatter
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 102
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

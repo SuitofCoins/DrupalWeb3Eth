@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for eth_purchase_buttom.module.
+ */
+
+/**
+ * Implements hook_theme().
+*/
+function eth_purchase_button_theme($existing, $type, $theme, $path) {
+  return [
+    'field__field_price' => [
+      'template' => 'field--field-price',
+      'variables' => ['nid' => NULL],
+      'base hook' => 'field',
+    ],
+  ];
+}

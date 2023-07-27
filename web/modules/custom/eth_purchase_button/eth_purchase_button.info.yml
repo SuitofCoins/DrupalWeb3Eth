@@ -1,0 +1,7 @@
+name: Eth Purchase Button
+description: 'Adds a button to purchase a product with ETH'
+type: module
+core_version_requirement: ^8 || ^9
+package: Web3
+dependencies:
+  - js_component
