@@ -1,0 +1,8 @@
+name: Web3 Blocks
+description: 'Adds Web3 react blocks to Drupal'
+type: module
+core_version_requirement: ^8 || ^9
+package: Web3
+dependencies:
+  - block
+  - js_component
