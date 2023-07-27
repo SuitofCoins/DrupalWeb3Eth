@@ -6,3 +6,4 @@ package: Web3
 dependencies:
   - block
   - js_component
+  - jsonapi
