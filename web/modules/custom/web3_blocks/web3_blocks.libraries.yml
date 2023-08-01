@@ -1,0 +1,15 @@
+react_app:
+  version: VERSION
+  js:
+    web3_react/js/dist/main.min.js:
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+
+react_app_dev:
+  version: VERSION
+  js:
+    web3_react/js/dist_dev/main.min.js: { minified: true }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

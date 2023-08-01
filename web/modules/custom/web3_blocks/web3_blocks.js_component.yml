@@ -1,0 +1,8 @@
+web3_blocks_metamask_button:
+  label: Metamask Button
+  description: Button to connect to Metamask
+  template: templates/web3_blocks_metamask_button.html.twig
+  root_id: web3-blocks-metamask-button
+  libraries:
+    dependencies:
+      - web3_blocks/react_app
